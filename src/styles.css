@@ -104,3 +104,110 @@
   background-color: rgba(255, 255, 255,.4) ;
   border-radius: 1rem;
 }
+@media ( max-height:800px  )  {
+
+.Container-App {
+  display: flex;
+ min-height: 700px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://simulation.smartraining.cl/sims/ripley/m1_presinter_1.1.2/assets/customers/ripley/m1_presinter/images/fondos/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.App {
+  text-align: center;
+  display: flex;
+   min-height: 700px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+}
+.container-Titulo {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.glitch {
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 2500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+.ButtonExperience{
+   font-size: 2rem;
+  font-weight: 100;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 2500ms infinite;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255,.4) ;
+  border-radius: 1rem;
+}
+
+}

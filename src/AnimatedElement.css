@@ -60,20 +60,27 @@
   right: 0;
   top: 0;
   bottom: 0;
+  margin: auto;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
 }
 .glitch__layer:nth-child(1) {
   transform: translateX(-5%);
+      width: 22rem;
+  background-position: center;
   animation: glitch-anim-1 2s infinite linear alternate;
 }
 .glitch__layer:nth-child(2) {
   transform: translateX(3%) translateY(3%);
+      width: 22rem;
+  background-position: center;
   animation: glitch-anim-2 2.3s -0.8s infinite linear alternate;
 }
 .glitch__layer:nth-child(3) {
   transform: translateX(5%);
+      width: 22rem;
+  background-position: center;
   animation: glitch-anim-flash 1s infinite linear;
 }
 @keyframes glitch-anim-1 {
@@ -164,7 +171,7 @@
 }
 .glitch img {
   position: relative;
-  height: 20rem;
+  height: 30rem;
   z-index: 1;
   display: block;
   cursor: pointer;
@@ -182,17 +189,18 @@
 }
 .image-container{
   position: relative;
-  max-height: 20rem;
+  max-height: 30rem;
   overflow: hidden;
 }
 
 .glitch__layers{
+  max-height: 30rem;
   position: relative;
 }
 
 .active{
   position: absolute;
-  height: 20rem;
+  max-height: 30rem;
   z-index: 2;
   left: 0;
   right: 0;
@@ -217,19 +225,27 @@
   top: 0;
   bottom: 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
+  margin: auto;
   z-index: 5;
 }
 .glitch__layer:nth-child(1) {
   transform: translateX(-5%);
+  width: 16rem;
+  background-position: center;
   animation: glitch-anim-1 2s infinite linear alternate;
 }
 .glitch__layer:nth-child(2) {
   transform: translateX(3%) translateY(3%);
+    width: 16rem;
+  background-position: center;
   animation: glitch-anim-2 2.3s -0.8s infinite linear alternate;
 }
 .glitch__layer:nth-child(3) {
   transform: translateX(5%);
+    width: 16rem;
+  background-position: center;
   animation: glitch-anim-flash 1s infinite linear;
 }
 @keyframes glitch-anim-1 {
